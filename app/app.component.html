@@ -1,0 +1,46 @@
+<!-- <app-a [arrData]="arrD" (getIndex)="getI($event)"></app-a>
+<h1>{{idx}}</h1> -->
+
+<div style="text-align:center">
+<!-- <ul>
+  <li *ngFor="let item of arr;let i=index">
+    {{item}}的索引是{{i}}
+  </li>
+</ul>
+<input type="text" [(ngModel)]="data"><button (click)="add()">添加数据</button>
+<h1>正在进行{{dataArr.length}}</h1>
+<ul>
+  <li *ngFor="let item of dataArr;let i=index">  
+  <input type="checkbox" (change)="cData(i)">{{item}}
+  <button (click)="delete()">删除</button>
+  </li>
+</ul>
+<ul>
+  <h1>已经完成</h1>
+  <li *ngFor="let item of dataA;let i=index">
+    <input type="checkbox" checked="checked" (click)="cData1(i)">{{item}}
+    <button (click)="delete1()">删除</button>
+  </li>
+</ul> -->
+
+<app-input (getContent)="getC($event)" ></app-input>
+<app-list [tolist]="tolist"></app-list>
+</div>
+
+<!-- 组件 -->
+<!-- <app-todolist></app-todolist> -->
+
+<!-- 组件交互
+父组件到子组件 -->
+ <!-- <app-goodslist [list]="arr1"></app-goodslist>  -->
+ <!-- <app-goodslist [list]="goodslist"></app-goodslist> -->
+ <!-- 父组件到子组件 -->
+ <!-- <div class="box">
+  <h2>你同意五一放七天假吗</h2>
+  <h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
+  <app-voter *ngFor="let voter of voters" [name]="voter" (onVoted)="onVoted($event)">
+  </app-voter>
+</div> -->
+  
+
+
