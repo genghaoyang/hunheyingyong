@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-todolist',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodolistComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public router:ActivatedRoute) { }
+  num;
   ngOnInit() {
+    this.num=this.router.snapshot.paramMap
+    console.log(this.router.snapshot.paramMap);//组件之间值的传递
   }
   tolist = [];
   comlist = [];

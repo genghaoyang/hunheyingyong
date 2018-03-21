@@ -12,6 +12,7 @@ export class AppComponent {
   ngOnInit(){
     //this.index=this.get.index;
   }
+  //arr=[1,2,3,4];
   content;
   tolist=[];
   getC(con){
@@ -20,9 +21,9 @@ export class AppComponent {
      console.log(this.tolist);
   }
   // arrD=[1,2,3,4,5,6];
-  // i:number;
-  // getI(idx){
-  //   console.log(idx);
+  // idx:number;
+  // getI(i){
+  //   this.idx=i;
   // }
 
   // data:string;

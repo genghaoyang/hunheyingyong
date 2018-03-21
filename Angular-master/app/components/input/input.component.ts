@@ -1,5 +1,5 @@
 import { Component, OnInit ,Output ,EventEmitter} from '@angular/core';
-
+import { AddDataService } from '../../services/add-data.service';
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit ,Output ,EventEmitter} from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-  constructor() { }
+  constructor(public add:AddDataService) { }
 
   ngOnInit() {
   }

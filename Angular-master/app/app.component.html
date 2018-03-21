@@ -1,13 +1,21 @@
 <!-- <app-a [arrData]="arrD" (getIndex)="getI($event)"></app-a>
 <h1>{{idx}}</h1> -->
+<!-- <router-outlet></router-outlet>
+<a routerLink="/input">input</a>
+<a routerLink="/todolist">todolist</a>
+<a routerLink="/goodslist">goodslist</a>
+<a routerLinkActive="active" routerLink="/todolist/10">todolist</a>
+<a routerLinkActive="active" routerLink="/home/50/10">home</a>
+<a routerLinkActive="active" routerLink="{{'input'+num}}">input</a> -->
 
 <div style="text-align:center">
 <!-- <ul>
   <li *ngFor="let item of arr;let i=index">
     {{item}}的索引是{{i}}
   </li>
-</ul>
-<input type="text" [(ngModel)]="data"><button (click)="add()">添加数据</button>
+</ul> -->
+
+<!--<input type="text" [(ngModel)]="data"><button (click)="add()">添加数据</button>
 <h1>正在进行{{dataArr.length}}</h1>
 <ul>
   <li *ngFor="let item of dataArr;let i=index">  
@@ -23,8 +31,8 @@
   </li>
 </ul> -->
 
-<app-input (getContent)="getC($event)" ></app-input>
-<app-list [tolist]="tolist"></app-list>
+ <app-input (getContent)="getC($event)" ></app-input>
+<app-list [tolist]="tolist"></app-list> 
 </div>
 
 <!-- 组件 -->
@@ -33,8 +41,8 @@
 <!-- 组件交互
 父组件到子组件 -->
  <!-- <app-goodslist [list]="arr1"></app-goodslist>  -->
- <!-- <app-goodslist [list]="goodslist"></app-goodslist> -->
- <!-- 父组件到子组件 -->
+ <!-- <app-goodslist [list]="goodslist"></app-goodslist>
+ 父组件到子组件 -->
  <!-- <div class="box">
   <h2>你同意五一放七天假吗</h2>
   <h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>

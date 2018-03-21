@@ -1,5 +1,5 @@
 import { Component, OnInit ,Input } from '@angular/core';
-
+import { AddDataService } from '../../services/add-data.service';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -7,8 +7,8 @@ import { Component, OnInit ,Input } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public add:AddDataService) { }
+  num;
   ngOnInit() {
   }
   @Input() tolist;
