@@ -1,0 +1,33 @@
+ul,li{
+    list-style: none;
+}
+body{
+    background: rgb(219, 213, 216);
+}
+ul{
+    width:500px;
+    height:100%;
+}
+li{
+    width: 200px;
+    font-size: 15px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5%;
+    height: 220px;
+    background: rgb(247, 203, 221);
+    border: 1px solid #ccc;
+}
+img{
+    width:150px;
+    height:150px;
+    float:left;
+    text-align:center;
+    padding-left:25px;
+    margin-top:5px;
+}
+p{
+    padding-top: 5px;
+    text-align:center;
+    height:45px;
+}

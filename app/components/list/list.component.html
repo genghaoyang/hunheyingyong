@@ -1,0 +1,16 @@
+<div>
+<h1>正在进行{{this.tolist.length}}</h1>
+<ul>
+  <li *ngFor="let item of tolist;let i=index">  
+  <input type="checkbox" (change)="cData(i)">{{item}}
+  <button (click)="delete(i)">删除</button>
+  </li>
+</ul>
+<ul>
+  <h1>已经完成</h1>
+  <li *ngFor="let item of comlist;let i=index">
+    <input type="checkbox" checked="checked" (click)="cData1(i)">{{item}}
+    <button (click)="delete1(i)">删除</button>
+  </li>
+</ul>
+</div>

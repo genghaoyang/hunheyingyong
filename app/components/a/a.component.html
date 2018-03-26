@@ -1,0 +1,10 @@
+<div>
+  <ul>
+    <li *ngFor="let i of arrData;let idx=index;" (click)="fn(idx)">
+      {{i}}
+    </li>
+  </ul>
+   <!-- <ng-content select=".box"> -->
+    <!-- 凡是class=box的标签都会被传入到其中 -->
+  <!-- </ng-content> --> 
+ </div>
