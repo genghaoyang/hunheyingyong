@@ -1,0 +1,66 @@
+page-hello {
+    .title{
+        text-align: center;
+        width:100%;
+    }
+    .slide{
+        height:auto;
+    }
+    .slideBar{
+        white-space: nowrap;
+    }
+    .title img{
+        width:45%;
+    }
+    .btn2{
+        float:right;
+    }
+    .pic{
+        width:100%;
+        height:30%;
+        padding-top:10px;
+    }
+    .pic li{
+        width:25%;
+        display: block; 
+        float: left;  
+        list-style: none; 
+        text-align:center;
+    }
+    .pic li p{
+        margin:auto;
+    }
+    .mess{
+        height:30px;
+        padding-left:15px;
+    }
+    .mess img{
+        height:25px;
+        float:left;
+    }
+    .mess p{
+        font-size:20px;
+        display: inline;
+        line-height:30px;
+    }
+    .det{
+        float:left;
+    }
+    .detl{
+        display: block;
+        float:right;
+        width:50px;
+        text-align: center;
+    }
+    .detl span{
+        color:red;
+        font-size: 22px;
+    }
+    .ban{
+        display: inline;
+    }
+    .til{
+        font-size:15px;
+        padding-left: 15px;
+    }
+}
