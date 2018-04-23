@@ -1,0 +1,32 @@
+page-mess {
+    .title{
+        text-align: center;
+        padding-top:15px;
+    }
+    .tbtn{
+        float:left;
+        display: block;
+    }
+    .bom{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    .bom img{
+        width:40px;
+        float:left;
+    }
+    .inp{
+        margin:0 auto;
+        height:30px;
+        width:50%;
+        float:left;
+        border:none;
+        padding-top:10px;
+    }
+    .bom1{
+        width:25%;
+        float:right;
+        display: block;
+    }
+}

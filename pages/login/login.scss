@@ -1,0 +1,53 @@
+page-login {
+    *{
+        background-color: transparent!important;
+        color:#fff;
+    }
+    .con{
+        background:url("../assets/imgs/loginback_03.png");
+    }
+    .p{
+        text-align: center;
+        font-size:20px;
+    }
+    .title{
+        padding-top: 30px;
+        height:100px;
+        text-align: center;
+    }
+    .title img{
+        width:150px;
+    }
+    .title p{
+        font-size: 17px;
+        color:#fff;
+    }
+    .list{
+        padding-top: 10px;
+        height:150px;
+    }
+    .img1{
+        width:20px;
+    }
+    .allbtn{
+        text-align: center;
+        padding-top:30px;
+    }
+    .btn{
+        width:300px;
+        margin-top:5px;
+        border: 1px solid #fedb47;
+        border-radius: 30px;
+        height:50px;
+    }
+    button.btn:focus{
+        background:#fedb47;
+    }
+    .mp{
+        padding-top:5px;
+        text-align: center;
+    }
+    .mp a{
+        text-decoration: none;
+    }
+}

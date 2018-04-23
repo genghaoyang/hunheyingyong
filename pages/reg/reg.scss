@@ -1,0 +1,58 @@
+page-reg {
+    *{
+        background-color: transparent!important;
+        color:#fff;
+    }
+    .con{
+        background:url("../assets/imgs/loginback_03.png");
+    }
+    .p{
+        font-size: 20px;
+        text-align: center;
+        padding-top:10px;
+        margin:0 auto;
+    }
+    .tbtn{
+        float:left;
+    }
+    .img1{
+        width:20px;
+    }
+    .allbtn{
+        text-align: center;
+        padding-top:30px;
+    }
+    .btn{
+        width:200px;
+        height:40px;
+        border-radius: 30px;
+        border: 1px solid #fedb47;
+    }
+    .btn:focus{
+        background:#fedb47;
+    }
+    .cek{
+        width:230px;
+        display:block;
+        float:left;
+    }
+    .btn3{
+        display: block;
+        float:right;
+        padding-top: 10px;
+    }
+    .btn2{
+        color:#000;
+        height:40px;
+        background: #fedb47!important;
+        border-radius: 20px;
+        width:90px;
+    }
+    .chek{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .chek a{
+        text-decoration: none;
+    }
+}

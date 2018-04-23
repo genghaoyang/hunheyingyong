@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="yel">
+    <img src="assets/imgs/phone_03.png" alt="">
+    <button ion-button icon-only class="tbtn" (click)="back()" color="yel">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+    <ion-title class="title">
+      <p>发布信息</p>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+          <ion-label>地区</ion-label>
+          <ion-select [(ngModel)]="st">
+            <ion-option value="f">北京</ion-option>
+            <ion-option value="m">河北</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>来源</ion-label>
+            <ion-select [(ngModel)]="gender">
+              <ion-option value="f">北京</ion-option>
+              <ion-option value="m">河北</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>转让价</ion-label>
+          <ion-select [(ngModel)]="gaming" interface="popover">
+            <ion-option value="nes">100万</ion-option>
+            <ion-option value="n64">200万</ion-option>
+            <ion-option value="ps">300万</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>总金额</ion-label>
+            <ion-select [(ngModel)]="os">
+              <ion-option value="f">100万</ion-option>
+              <ion-option value="m">200万</ion-option>
+            </ion-select>
+        </ion-item>
+        <div>
+          <ion-label class="text">内容描述</ion-label>
+          <ion-input type="text" placeholder="请输入内容" class="inp"></ion-input>
+          <div class="img">
+            <img src="assets/imgs/mepic1.png" alt="">
+            <img src="assets/imgs/mepic.png" alt="">
+          </div>
+        </div>
+      </ion-list>
+      <div><button class="btn">确认发布</button></div>
+</ion-content>

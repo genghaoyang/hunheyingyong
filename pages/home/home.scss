@@ -1,0 +1,85 @@
+page-home {
+    .title{
+         text-align: center;
+    }
+    .btn1{
+        float:left;
+        margin:0 auto;
+    }
+    .btn2{
+        float:right;
+        margin:0 auto;
+    }
+    .slide{
+        height:auto;
+    }
+    .slideBar{
+        white-space: nowrap;
+    }
+    .title img{
+        width:30%;
+    }
+    
+    .pic{
+        width:100%;
+        height:36%;
+        padding-top:10px;
+    }
+    .pic li{
+        width:25%;
+        height:55%;
+        display: block; 
+        float: left;  
+        list-style: none; 
+        text-align:center;
+        border:1px solid #e6e6e6;
+        margin:0 auto;
+    }
+    .pic li p{
+        margin:0 auto;
+    }
+    .mess{
+        height:30px;
+        text-align: center;
+    }
+    .mess img{
+        height:25px;
+    }
+    .mess p{
+        font-size:20px;
+        display: inline;
+        line-height:30px;
+    }
+    .det{
+        float:left;
+    }
+    .detl{
+        display: block;
+        float:right;
+        width:60px;
+        text-align: center;
+    }
+    .detl span{
+        color:red;
+        font-size: 22px;
+    }
+    .ban{
+        display: inline;
+    }
+    // .img1{
+    //     width:10px;
+    //     height:10px;
+    // }
+    .til{
+        font-size:15px;
+        padding-left: 15px;
+    }
+    .search{
+        width:80%;
+        height:40px;
+        border-radius: 20px;
+        background-color: #fff;
+        margin:0 auto;
+        text-indent:30%;
+    }
+}

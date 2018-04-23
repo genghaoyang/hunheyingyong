@@ -1,0 +1,166 @@
+<!--
+  Generated template for the HelloPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+    <ion-navbar color="yel" #content class="nav">
+        <img src="assets/imgs/phone_03.png" alt="">
+        <ion-title class="title">   
+         <button ion-button icon-only menuToggle class="btn1">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <img src="assets/imgs/logo.png" alt="">
+          <button ion-button icon-only color="yel" class="btn2">
+              <ion-icon name="search"></ion-icon>
+          </button>
+        </ion-title> 
+    </ion-navbar>
+    <ion-toolbar color="yel">
+        <ion-input placeholder="搜索" class="search"></ion-input>
+    </ion-toolbar>
+    <!-- <ion-scroll class="slideBar" scrollX="true">
+        <span>好友</span>
+        <span>好友</span>
+        <span>好友</span>
+        <span>好友</span>
+        <span>好友</span>
+        <span>好友</span>
+        <span>好友</span>
+        <span>好友</span>
+        <span>好友</span>
+      </ion-scroll> -->
+  </ion-header>
+
+   <ion-menu [content]="content" type="overlay">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <button ion-item (click)="openPage(homePage)">
+            我的
+          </button>
+          <button ion-item (click)="openPage1(friendsPage)">
+            发布
+          </button>
+          <button ion-item (click)="openPage2(eventsPage)">
+            消息
+          </button>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+  <ion-content color="con">
+   <ion-slides pager class="slide">
+    <ion-slide>
+      <img src="assets/imgs/banner.png" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/banner.png" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/banner.png" alt="">
+    </ion-slide>
+  </ion-slides>
+  <!-- <button ion-button (click)="go()">跳转</button> -->
+  <!-- <div [ngSwitch]="search">
+      <p *ngSwitchCase="'infor'">infor</p>
+      <p *ngSwitchCase="'service'">service</p>
+  </div> -->
+  <ion-segment [(ngModel)]="search" color="yel">
+      <ion-segment-button value="infor">
+          找信息
+      </ion-segment-button>
+      <ion-segment-button value="service">
+          找服务
+      </ion-segment-button>
+  </ion-segment>
+  <div class="pic">
+      <li><img src="assets/imgs/logo_13.png" alt=""><p>资产包转让</p></li>
+      <li><img src="assets/imgs/logo_09.png" alt=""><p>债权转让</p></li>
+      <li><img src="assets/imgs/logo_15.png" alt=""><p>估产转让</p></li>
+      <li><img src="assets/imgs/logo_18.png" alt=""><p>商业保理</p></li>
+      <li><img src="assets/imgs/logo_11.png" alt=""><p>典当担保</p></li>
+      <li><img src="assets/imgs/logo_20.png" alt=""><p>悬赏信息</p></li>
+      <li><img src="assets/imgs/logo_23.png" alt=""><p>尽职调查</p></li>
+      <li><img src="assets/imgs/logo_33.png" alt=""><p>融资借贷</p></li>
+  </div>
+      <!-- <ion-item *ngFor="let item of items">{{item}}</ion-item> -->
+      <div class="mess">
+        <img src="assets/imgs/VIP.png" alt="">
+        <p>优质信息</p>
+      </div>
+    <ion-list>
+       <div>
+       <p class="til">资产包转让</p>
+       <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/logo_05.png">
+        </ion-thumbnail>
+        <div class="det">
+            <p>地区：北京</p>
+            <p>来源：银行</p>
+            <p>类型：抵押</p>
+          </div>
+          <div class="detl">
+            <span>500万</span>
+            <p>总金额</p>
+          </div>
+          <div class="detl">
+            <span>300万</span>
+            <p>转让价</p>
+          </div>
+        <button ion-button clear item-end><img src="assets/imgs/right.png" alt=""></button>
+       </ion-item>
+      </div>
+
+       <div>
+       <p class="til">委外催收</p>
+       <ion-item>
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/pic2.png">
+          </ion-thumbnail>
+          <div class="det">
+            <p>地区：北京</p>
+            <p>状态：诉讼</p>
+            <p>类型：个人</p>
+          </div>
+          <div class="detl">
+            <span>100</span>
+            <p>金额</p>
+          </div>
+          <div class="detl">
+            <span>30%</span>
+            <p>佣金比例</p>
+          </div>
+          <button ion-button clear item-end><img src="assets/imgs/right.png" alt="" class="img1"></button>
+         </ion-item>
+        </div>
+
+        <div *ngFor="let item of items">
+        <p class="til">法律服务</p>
+         <ion-item>
+            <ion-thumbnail item-start>
+              <img src="assets/imgs/pic1.png">
+            </ion-thumbnail>
+            <div class="det">
+                <p>地区：北京</p>
+                <p>类型：民事</p>
+              </div>
+              <div class="detl">
+                <span>咨询</span>
+                <p>需求</p>
+              </div>
+            <button ion-button clear item-end><img src="assets/imgs/right.png" alt=""></button>
+           </ion-item>
+          </div>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content>

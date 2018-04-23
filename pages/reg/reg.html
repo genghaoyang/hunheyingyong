@@ -1,0 +1,49 @@
+<!--
+  Generated template for the RegPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <img src="assets/imgs/phone1_03.png" alt="">
+      <button ion-button icon-only class="tbtn" (click)="back()">
+            <ion-icon name="arrow-back"></ion-icon>
+    </button>
+      <p class="p">手机注册</p>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="con">
+    <div class="list">
+        <ion-item>
+          <ion-label><img src="assets/imgs/phone_02.png" alt="" class="img1"></ion-label>
+          <ion-input type="text" placeholder="手机号" [ngModel]="name"></ion-input>
+        </ion-item>
+        <div>
+          <ion-item class="cek">
+            <ion-label><img src="assets/imgs/loginpwd_03.png" alt=""  class="img1"></ion-label>
+            <ion-input type="text" placeholder="请输入验证码"></ion-input>
+          </ion-item>
+          <div class="btn3"><button class="btn2">获取验证码</button></div>
+          
+        </div>
+        <ion-item>
+            <ion-label><img src="assets/imgs/loginpwd_03.png" alt=""  class="img1"></ion-label>
+            <ion-input type="password" placeholder="请输入密码"  [ngModel]="pwd"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label><img src="assets/imgs/loginpwd_03.png" alt=""  class="img1"></ion-label>
+            <ion-input type="password" placeholder="请再次输入密码"></ion-input>
+        </ion-item>
+      </div>
+      <div class="allbtn">
+          <button class="btn" (click)="goLogin()" block>注册</button>
+      </div>
+      <div class="chek">
+          <input type="checkbox" class="ckb"><a (click)="goRegxy()">我已同意并阅读《资芽网注册协议》</a>
+      </div>
+</ion-content>
+
